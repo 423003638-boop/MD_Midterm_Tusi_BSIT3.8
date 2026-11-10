@@ -34,4 +34,37 @@ The program highlights core Object-Oriented Programming (OOP) concepts, rigorous
 
 ---
 
-## 🏗️ Object-Oriented Architecture Diagram
+
+## 🧪 Sample Test Scenarios
+
+### Scenario 1: Pre-loading & Polymorphic Record Display (Valid Input)
+1. Launch application and select **Option 8** to pre-load sample test dataset.
+2. Select **Option 5** -> **Option 1** to display all records.
+3. **Expected Output:** The console displays pre-formatted cards for participants (`P01`, `P02`), book resources (`B01`, `B02`), and digital courses (`C01`, `C02`) with accurate timestamp formatting.
+
+### Scenario 2: Processing Transactions & Analytics (Valid Input)
+1. Select **Option 3** -> **Option 1** (Issue Book).
+2. Enter Participant ID `P01` and Book ID `B01`.
+3. Select **Option 4** (Enroll in Course).
+4. Enter Participant ID `P01` and Course ID `C01`.
+5. Select **Option 7** (View Analytics).
+6. **Expected Output:** System displays confirmation messages, updates `P01`'s balance by `$49.99`, marks `B01` as checked out, and reflects updated statistics in the analytics summary.
+
+### Scenario 3: Error Handling & Invalid Input Validation (Error Handling)
+1. Select **Option 2** -> **Option 2** (Add Digital Course).
+2. Enter Course ID `C03`, Title `Advanced Dart`, Instructor `Dr. Alex`.
+3. Enter invalid text for Duration: `fifteen`.
+4. **Expected Output:** System catches format exception, displays `❌ Invalid number format. Please enter a valid positive double`, and prompts user again without terminating the program.
+5. Select **Option 3** -> **Option 1** (Issue Book).
+6. Enter non-existent Participant ID `P99`.
+7. **Expected Output:** System catches missing entity error and displays `❌ [ERROR] Participant with ID "P99" was not found.`
+
+---
+
+## 🚀 How to Run the Application
+
+### Option A: Running locally via Dart SDK
+1. Ensure the [Dart SDK](https://dart.dev/get-dart) is installed on your environment.
+2. Clone this repository:
+   ```bash
+   git clone [https://github.com/](https://github.com/)[YOUR_USERNAME]/MD_Midterm_[Surname]_[Section].git
